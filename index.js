@@ -1,12 +1,6 @@
-const { application } = require("express");
-const express = require("express");
-const PORT = 8000;
+const app = require("./app");
 
-// initialize App
-const app = express();
-
-// view engine
-app.set("view engine", "ejs");
+const PORT = process.env.PORT || 5000;
 
 // listening to server
 app.listen(PORT, () => {
